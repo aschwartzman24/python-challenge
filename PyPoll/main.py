@@ -52,10 +52,9 @@ print("---------------------------")
 
 write_file = f"pypoll_results_summary.txt"
 
-#open write file
+
 ("analysis/PyPollAnalysis.txt", "w") as analysis:
 
-#print analysis to file
 analysis.write("Election Results\n")
 analysis.write("--------------------------\n")
 analysis.write(f"Total Votes: {num_votes}\n")
@@ -65,5 +64,5 @@ analysis.write("---------------------------\n")
 analysis.write(f"Winner: {winner}\n")
 analysis.write("---------------------------\n")
 
-#close file
+# count function https://www.geeksforgeeks.org/python-string-count/
 analysis.close()
